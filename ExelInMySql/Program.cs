@@ -18,12 +18,12 @@ namespace ExelInMySql
             string sql = "select * from user";
             MySqlCommand com = new MySqlCommand(sql, con);
             MySqlDataReader tabl = com.ExecuteReader();
-            /*
+            
             while (tabl.Read())
             {
                 Console.WriteLine(String.Format("|{0:d3} | {1} | {2} | {3:d3}", tabl[0], tabl[1], tabl[2], tabl[3]));
             }
-            */
+            
             /*
             //con.ConnectionString = @"";
             Excel.Application excel = new Excel.Application();
